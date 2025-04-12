@@ -421,11 +421,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 74vh;
+    height: auto;
     flex-direction: column;
     padding-top: 60px;
     gap: 2.7rem;
-    margin-top: 3rem;
+    margin-top: -2rem;
 }
 
 .home-portfolio-header {
@@ -440,6 +440,7 @@ section {
 .home-portfolio-container {
     height: 100%;
     width: 100%;
+    height: 74vh;
     display: flex;
     justify-content: space-between;
     background-color: var(--fourth-color);
@@ -496,7 +497,7 @@ section {
     display: flex;
     background-color: var(--fourth-color);
     border-radius: 20px;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .home-personal-portfolio-slideshow {
@@ -613,6 +614,7 @@ section {
     .home-portfolio-container {
         flex-direction: column;
         margin-top: 2rem;
+        height: auto;
     }
 
     .home-portfolio-slideshow{
@@ -634,7 +636,8 @@ section {
 
     .home-personal-portfolio {
         flex-direction: column;
-        margin-top: 9rem;
+        margin-top: 1rem;
+        height: auto;
     }
     .home-personal-portfolio-slideshow {
         width: 100%;

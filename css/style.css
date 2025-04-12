@@ -562,6 +562,27 @@ section {
     margin-bottom: var(--ten-pixel-font-size);
 }
 
+@media screen and (max-width: 280px) {
+    .home-hero-header {
+        font-size: 30px!important;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 330px) {
+    .home-hero-content-text {
+        padding: 1rem;
+    }
+
+    .home-hero-header {
+        font-size: 50px!important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home-hero-content-text {
+        padding: 2rem;
+    }
+}
 
 @media screen and (max-width: 500px) {
     header {

@@ -424,7 +424,7 @@ section {
     height: auto;
     flex-direction: column;
     padding-top: 60px;
-    gap: 2.7rem;
+    gap: 1rem;
     margin-top: -2rem;
 }
 
@@ -570,7 +570,7 @@ section {
 
 @media screen and (max-width: 300px) {
     .home-services-card {
-        padding: 10px!important;
+        padding: 1px!important;
     }
 
     #animation1 {

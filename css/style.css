@@ -2664,6 +2664,33 @@ textarea {
         font-size: 2.5rem; /* 24px */
         margin-bottom: -2rem;
     }
+}
+
+@media screen and (max-width: 600px) {
+
+    .feather-four {
+        font-size:  10rem;
+        color: var(--primary-color);
+        transform: rotate(-10deg);
+        top: -1.7rem;
+        left: 40%;
+        font-weight: 550;
+        z-index: -3;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+
+    .feather-four {
+        font-size:  6rem;
+        color: var(--primary-color);
+        transform: rotate(-10deg);
+        top: -1.7rem;
+        left: 40%;
+        font-weight: 550;
+        z-index: -3;
+    }
     
 }
 
@@ -2826,6 +2853,22 @@ textarea {
 @media screen and (max-width: 318px) {
     .date-one::after {
         height: 1350px!important;
+    }
+
+    
+}
+
+@media screen and (max-width: 355px) {
+
+    .writing-part-two-services {
+        padding: 10px!important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .assistantship-header-text, .editing-header-text, .writing-header-text {
+        font-size: 2rem!important; /* 24px */
     }
 }
 
@@ -3153,6 +3196,12 @@ textarea {
         font-size: 2.5rem; /* 48px */
     }
 
+}
+
+@media screen and (min-width: 731px) and (max-width: 1200px)  {
+    .assistantship-header-text{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-width: 731px) and (max-width: 1230px)  {

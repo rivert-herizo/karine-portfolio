@@ -1726,25 +1726,35 @@ footer {
     }
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 365px) {
     .date-one::after {
-        height: 1570px!important;
+        height: 1300px!important;
     }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 318px) {
     .date-one::after {
-        height: 1650px!important;
+        height: 1350px!important;
     }
 }
 
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 310px) {
+    .date-one::after {
+        height: 1500px!important;
+    }
+}
+
+@media screen and (max-width: 280px) {
     .date-one::after {
         height: 1700px!important;
     }
 }
 
-
+@media screen and (max-width: 265px) {
+    .date-one::after {
+        height: 1900px!important;
+    }
+}
 @media screen and (max-width: 955px) {
     .footer-link {
         gap: 1rem!important;

@@ -202,6 +202,16 @@ service_nav.forEach((nav, index) => {
     });
 });
 
+// Handle URL tab parameter
+const params = new URLSearchParams(window.location.search);
+const tabIndex = parseInt(params.get('tab'));
+
+if (!isNaN(tabIndex) && service_nav[tabIndex]) {
+    service_nav[tabIndex].click();
+} else {
+    service_nav[0].click(); // default to first tab
+}
+
 const boxes = document.querySelectorAll('.ghost-writing-box');
 const modal = document.getElementById('modal');
 const modalTitle = document.querySelector('.modal-main-title');

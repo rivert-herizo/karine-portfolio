@@ -175,3 +175,35 @@ service_nav.forEach((nav, index) => {
         service_section[index].style.display = 'flex'; // Show corresponding section
     });
 });
+
+const boxes = document.querySelectorAll('.ghost-writing-box');
+const modal = document.getElementById('modal');
+const modalTitle = document.querySelector('.modal-main-title');
+const modalType = document.querySelector('.modal-box-type');
+const modalClose = document.querySelector('.modal-close');
+const modalContent = document.querySelector('.modal-content');
+const modalText = document.querySelector('.modal-head');
+
+boxes.forEach(box => {
+    box.addEventListener('click', () => {
+        const boxtitle = box.querySelector('.box-main-title').innerText;
+        const boxtype = box.querySelector('.box-type').innerText;
+        const boxTextColor = getComputedStyle(box).color;
+        modalTitle.innerHTML = boxtitle;
+        modalType.innerText = boxtype;
+        console.log(getComputedStyle(box).backgroundColor);
+        modalText.style.color = boxTextColor;
+        modalContent.style.backgroundColor = getComputedStyle(box).backgroundColor;
+        modal.style.display = 'flex';
+    });
+});
+
+modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});

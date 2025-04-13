@@ -1738,7 +1738,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 310px) {
+/* @media screen and (max-width: 310px) {
     .date-one::after {
         height: 1500px!important;
     }
@@ -1754,7 +1754,7 @@ footer {
     .date-one::after {
         height: 1900px!important;
     }
-}
+} */
 @media screen and (max-width: 955px) {
     .footer-link {
         gap: 1rem!important;

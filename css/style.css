@@ -523,19 +523,31 @@ footer {
     border-radius: 20px;
 }
 
-.home-portfolio-slideshow{
+
+.home-portfolio-slideshow {
     height: 100%;
     width: 50%;
+    overflow: hidden;
+    position: relative;
 }
 
-.home-portfolio-slideshow img{
+.home-portfolio-slideshow img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+.home-portfolio-slideshow img.active {
+    opacity: 1;
+    z-index: 1;
+}
 
 .home-portfolio-text {
     width: 50%;
@@ -576,17 +588,42 @@ footer {
     margin-top: 1rem;
 }
 
-.home-personal-portfolio-slideshow {
-    height: 100%;
-    width: 50%;
-}
-
-.home-personal-portfolio-slideshow img{
+/* .home-personal-portfolio-slideshow img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    opacity: 0;
+}
+
+.home-personal-portfolio-slideshow img.active{
+    opacity: 1;
+} */
+
+.home-personal-portfolio-slideshow {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.home-personal-portfolio-slideshow img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.home-personal-portfolio-slideshow img.active {
+    opacity: 1;
+    z-index: 1;
 }
 
 .home-personal-portfolio-text {
@@ -2856,11 +2893,14 @@ textarea {
     }
 
     .home-portfolio-slideshow{
+        overflow: hidden;
+        position: relative;
         width: 100%;
-        height: 50%;
+        height: 400px;
     }
     
     .home-portfolio-slideshow img{
+        height: 100%;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 0px;
@@ -2879,7 +2919,7 @@ textarea {
     }
     .home-personal-portfolio-slideshow {
         width: 100%;
-        height: 50%;
+        height: 300px;
         order: 1;
     }
     

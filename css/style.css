@@ -1308,6 +1308,58 @@ footer {
     opacity: 0.8;
 }
 
+.services-hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 9rem;
+    gap: 2.7rem;
+    height: 25vh;
+}
+
+.services-hero-header {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: var(--fifty-pixel-font-size);
+    color: var(--secondary-color);
+    letter-spacing: -2px;
+    line-height: 1.2;
+    position: relative;
+}
+
+.services-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: var(--services-navbar-height);
+    background-color: var(--secondary-color);
+    padding: 10px;    
+    border-radius: 20px;
+}
+
+.services-navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: var(--ten-pixel-font-size);
+}
+
+.services-navbar ul li{
+    color: var(--primary-color);
+    border-radius: 15px;
+    line-height: 1.5;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.services-navbar ul li.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 30px;
+}
+
 .secondary-button {
     display: flex;
     justify-content: space-between;
@@ -1520,6 +1572,26 @@ footer {
     }
 }
 
+@media screen and (max-width: 455px) {
+    .services-navbar ul li.active {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 436px) {
+    .services-navbar ul li {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .services-navbar ul li {
+        font-size: 0.5rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
     header {
         top: 0.5rem;
@@ -1558,6 +1630,10 @@ footer {
         margin-left: -3px;
         z-index: 100!important;
     }
+
+    footer {
+        width: 98%!important;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1581,7 +1657,6 @@ footer {
     footer {
         height: auto;
         padding: 30px;
-        width: 98%;
     }
 }
 
@@ -1645,7 +1720,6 @@ footer {
     footer {
         height: auto;
         padding: 30px;
-        width: 98%;
     }
 }
 

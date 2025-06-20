@@ -11,9 +11,7 @@ const sendMail = (e) => {
             contact_message.innerHTML = "";
         }, 5000);
         contactForm.reset();
-    }, (error) => {
-        contact_message.innerHTML = "Failed to send message. Please try again later.";
-        contact_message.style.color = "#ff0000";}
+    })
 }
 
 contactForm.addEventListener('submit', sendMail);

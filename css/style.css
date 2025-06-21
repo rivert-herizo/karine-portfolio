@@ -1599,10 +1599,10 @@ footer {
     justify-content: center;
     align-items: center;
     gap: var(--ten-pixel-font-size);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-family: 'Helvetica', sans-serif;
-    background-color: var(--secondary-color);
-    border-radius: var(--ten-pixel-font-size);
+    /* background-color: var(--secondary-color); */
+    /* border-radius: var(--ten-pixel-font-size); */
     padding: var(--ten-pixel-font-size);
 
 }
@@ -1904,11 +1904,12 @@ footer {
 }
 
 .works-section {
+    width: 80.5%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     height: auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     /* border: 5px solid var(--secondary-color); */
 }
@@ -1923,7 +1924,26 @@ footer {
     position: relative;
     padding: 15px;
     height: 500px;
-    width: 305px;
+    width: 290px;
+}
+
+.work-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+.work-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: auto;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .work::before {

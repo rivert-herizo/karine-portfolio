@@ -154,6 +154,7 @@
     bottom: 50px;
     height: 60px;
     width: 60px;
+    z-index: 1000;
 }
 .language-icon img{
     height: 100%;
@@ -1657,11 +1658,14 @@ footer {
 }
 
 .service-header {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-family: "Yeseva One", sans-serif;
     font-size: var(--twenty-pixel-font-size);
     width: 100%;
-    height: 100%;   
+    height: 100%; 
+    background-color: var(--secondary-color);
+    border-radius: var(--ten-pixel-font-size);
+    padding: var(--ten-pixel-font-size);  
 }
 
 .writing-part-two-image {
@@ -1702,10 +1706,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--ten-pixel-font-size);
-    color: var(--secondary-color);
+    
     font-family: 'Helvetica', sans-serif;
-    /* background-color: var(--secondary-color); */
+    background-color: none;
     /* border-radius: var(--ten-pixel-font-size); */
     padding: var(--ten-pixel-font-size);
 
@@ -1789,7 +1792,6 @@ footer {
 }
 
 .service-header {
-    color: var(--secondary-color);
     font-family: "Yeseva One", sans-serif;
     font-size: var(--twenty-pixel-font-size);
     width: 100%;
@@ -1825,12 +1827,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--ten-pixel-font-size);
-    color: var(--primary-color);
-    font-family: 'Helvetica', sans-serif;
-    background-color: var(--secondary-color);
-    border-radius: var(--ten-pixel-font-size);
-    padding: var(--ten-pixel-font-size);
 }
 
 .services-assistantship {
@@ -1914,11 +1910,11 @@ footer {
 }
 
 .service-header {
-    color: var(--secondary-color);
-    font-family: "Yeseva One", sans-serif;
-    font-size: var(--twenty-pixel-font-size);
     width: 100%;
     height: 100%;
+    gap: var(--ten-pixel-font-size);
+    color: var(--primary-color);
+    font-family: 'Helvetica', sans-serif;
 }
 
 .assistantship-part-two-image {
@@ -1950,12 +1946,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--ten-pixel-font-size);
-    color: var(--primary-color);
-    font-family: 'Helvetica', sans-serif;
-    background-color: var(--secondary-color);
-    border-radius: var(--ten-pixel-font-size);
-    padding: var(--ten-pixel-font-size);
 }
 
 .service-section.active {

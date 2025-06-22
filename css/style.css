@@ -65,6 +65,102 @@
     margin: 0 auto;
 }
 
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    background-color: var(--fourth-color);
+    border-radius: 20px;
+    width: 100%;
+}
+
+.faq-hero-header {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: var(--fifty-pixel-font-size);
+    color: var(--secondary-color);
+    letter-spacing: -2px;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.faq-header-text {
+    text-align: center;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  height: auto;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--middle-color);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 15px 20px;
+  background: var(--primary-color);
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* .accordion-header:hover {
+  background: #eee;
+} */
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: var(--primary-color);
+  padding: 0 20px;
+}
+
+.accordion-body p {
+  margin: 15px 0;
+}
+
+.icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 30px;
+  color: var(--third-color);
+  margin-right: 20px;
+}
+
+.accordion-item.active .accordion-body {
+  max-height: 200px; /* Adjust as needed */
+}
+
+.accordion-item.active .icon {
+  transform: rotate(45deg);
+}
+
+.language-icon {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 60px;
+    width: 60px;
+}
+.language-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 body {
     font-family: 'Helvetica', sans-serif;
     width: 100%;
@@ -75,6 +171,14 @@ body {
 a {
     list-style: none;
     text-decoration: none;
+}
+
+.box-text-content {
+    display: none;
+}
+
+.box-text-intro {
+    display: none;
 }
 
 header {
@@ -716,7 +820,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 60%;
+    width: 50%;
     padding: var(--fifty-pixel-font-size);
     gap: 2rem;
 }
@@ -732,7 +836,7 @@ footer {
 
 .about-ending-image  {
     height: 100%;
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2144,10 +2248,10 @@ footer {
 .modal-content {
     position: relative; /* Important to position the close button inside */
     background-color: white;
-    padding: 100px 50px;
+    padding: 50px 50px;
     border-radius: 20px;
-    width: auto;
-    height: auto;
+    width: 550px;
+    height: 370px;
     max-width: 600px;
     max-height: 500px;
     text-align: center;
@@ -2156,6 +2260,20 @@ footer {
     justify-content: center;
     align-items: center;
     gap: var(--trente-pixel-font-size);
+}
+
+/* .modal-content::-webkit-scrollbar {
+  display: none; 
+} */
+
+.modal-scroll {
+   height: 90%; 
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.modal-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-close {
@@ -2185,6 +2303,7 @@ footer {
 }
   
 .workbutton {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3323,6 +3442,18 @@ textarea {
     
 }
 
+@media screen and (max-width: 1496px)  {
+    .work-1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        height: auto;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
 @media screen and (max-width: 1439px) {
     .about-hero-container {
         flex-direction: column;
@@ -3345,6 +3476,7 @@ textarea {
     }
     
     .about-ending-image  {
+        height: 100%;
         width: 100%;
     }
 

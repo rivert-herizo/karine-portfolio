@@ -210,13 +210,31 @@ const modalClose = document.querySelector('.modal-close');
 const modalContent = document.querySelector('.modal-content');
 const modalText = document.querySelector('.modal-head');
 
+
 boxes.forEach(box => {
+    console.log(box);
     box.addEventListener('click', () => {
         const boxtitle = box.querySelector('.box-main-title').innerText;
         const boxtype = box.querySelector('.box-type').innerText;
+        const boxContentIntro = box.querySelector('.box-text-intro');
+        const boxContentText = box.querySelector('.box-text-content');
         const boxTextColor = getComputedStyle(box).color;
+        const workButton = document.querySelector('.workbutton');
+        const boxContent = document.querySelector('.box-content');
+
         modalTitle.innerHTML = boxtitle;
         modalType.innerText = boxtype;
+        boxContent.innerText = boxContentIntro.innerText;
+        workButton.style.display = 'flex';
+
+        workButton.addEventListener('click', () => {  
+            modalTitle.innerHTML = boxtitle;
+            modalType.innerHTML = boxtype;      
+            boxContent.innerText = boxContentText.innerText;
+            modal.style.display = 'flex';
+            modalContent.scrollTop = 0;
+            workButton.style.display = 'none';
+        });
         console.log(getComputedStyle(box).backgroundColor);
         modalText.style.color = boxTextColor;
         modalContent.style.backgroundColor = getComputedStyle(box).backgroundColor;
@@ -233,4 +251,6 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
+
 

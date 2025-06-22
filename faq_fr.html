@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>About</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,41 +58,45 @@
         </div>
         
     </header>
-
-    <a class="language-icon" href="contact_fr.html"> 
-        <img src="images/french_icon.avif" alt="French Logo">
+    
+    <a class="language-icon" href="faq.html"> 
+        <img src="images/english.avif" alt="English Logo">
     </a>
 
-    <section class="hero-1 contact-hero section">
-        <div class="contact-content">
-          <div class="contact-hero-header">
-              <p class="contact-header-text">Let’s talk about your next project !</p>
-          </div>
-          <div class="contact-text-big">
-              <p>For any commissions or project inquiries, feel free to contact me at this e-mail address : karinerasa.contact@gmail.com</p>
-          </div>
-          <div class="contact-text-small">
-              <p>Or you can fill this form</p>
-          </div>
-          <form class="contact-form-form" action="" id="contact-form">
-              <div class="contact-info">
-                <div class="contact-form">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" id="name" placeholder="Your name" required>
+    <section class="hero-1 section">
+        <div class="faq-container">
+            <div class="faq-hero-header">
+                <p class="faq-header-text">Q&A</p>
+            </div>
+            <div class="accordion">
+            <div class="accordion-item">
+                    <button class="accordion-header">
+                    <span class="icon">+</span>
+                    Item 1
+                    </button>
+                    <div class="accordion-body">
+                    <p>This is the content for item 1.</p>
+                    </div>
                 </div>
-                <div class="contact-form">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                    <span class="icon">+</span>
+                    Item 2
+                    </button>
+                    <div class="accordion-body">
+                    <p>This is the content for item 2.</p>
+                    </div>
                 </div>
-              </div>
-              
-              <div class="contact-form message-form">
-                  <label for="message">Message</label>
-                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-              </div>
-              <button type="submit" class="mail-submit">Submit</button>
-              <p class="contact-form-text" id="contact-message"></p>
-          </form>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                    <span class="icon">+</span>
+                    Item 3
+                    </button>
+                    <div class="accordion-body">
+                    <p>This is the content for item 3.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </section>
@@ -126,7 +130,7 @@
                                 <a href="files/payments_delivery.pdf">Payments & delivery</a>
                             </li>
                             <li>
-                                <a href="contact.html">FAQ</a>
+                                <a href="faq.html">FAQ</a>
                             </li>
                         </ul>
                     </div>
@@ -147,9 +151,7 @@
         </div> -->
 
     </footer> 
-    <script src="js/contact.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script src="js/accordion.js"></script>
 </body>
 </html>
